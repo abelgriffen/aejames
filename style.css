@@ -1,0 +1,306 @@
+/*
+Theme Name: Vin Theme
+Theme URI: http://example.com/vin-theme
+Author: Your Name
+Author URI: http://example.com
+Description: A custom WordPress theme called Vin Theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: custom, responsive, blog
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.sidebar {
+    background: #f4f4f4;
+    padding: 15px;
+}
+.vce-row[data-vce-stretch-content=true] {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+
+/*custom styles for the theme*/
+h1, h2, h3 {
+    color: #333;
+}
+
+.bluecolor{
+    color: #007AFF;
+}
+.textblack{
+    color:#090909
+}
+.textgrey{
+    color:#757B82;
+}
+
+/* Navigation styles */
+header ul#menu-main-menu li a {
+    padding: 0 14px;
+    border: 0px;
+    text-decoration: none;
+    color: #090909;
+}
+
+header ul#menu-main-menu li a[aria-current="page"] {
+    color: #007aff;
+}
+
+div#navbarNavDropdown.show {
+    position: fixed;
+    top: 0px;
+    z-index: 99999;
+    background: #fff;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    height: 100%;
+    padding-top: 90px;
+}
+
+div#navbarNavDropdown.show li a {
+    line-height: 62px;
+}
+
+
+/* Footer styles */
+ul#menu-footer-menu li {
+    display: inline;
+    padding: 0 15px;
+    border-right: 1px solid #514971;
+}
+
+ul#menu-footer-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul#menu-footer-menu li a[aria-current="page"] {
+    color: #007aff;
+}
+
+ul#menu-footer-menu li:last-child {border: 0px;}
+
+ul#menu-footer-menu {
+    padding-top: 13px;
+}
+
+/*Contact Page Css*/
+div#contactform{
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 10px #e4e4e4;
+    border-radius: 10px;
+}
+button[type="submit"], button[type="submit"], button.wpforms-submit,div.wpforms-container-full input[type=submit]:not(:hover):not(:active), div.wpforms-container-full button[type=submit]:not(:hover):not(:active), div.wpforms-container-full .wpforms-page-button:not(:hover):not(:active), .wp-core-ui div.wpforms-container-full input[type=submit]:not(:hover):not(:active), .wp-core-ui div.wpforms-container-full button[type=submit]:not(:hover):not(:active), .wp-core-ui div.wpforms-container-full .wpforms-page-button:not(:hover):not(:active) {
+    background: #007AFF;
+    border-radius: 5px;
+    padding: 10px 30px;
+    box-shadow: none !important;
+    border: 0px !important;
+    outline: none !important;
+}
+
+div.wpforms-container-full input[type=submit]:hover, div.wpforms-container-full input[type=submit]:active, div.wpforms-container-full button[type=submit]:hover, div.wpforms-container-full button[type=submit]:active, div.wpforms-container-full .wpforms-page-button:hover, div.wpforms-container-full .wpforms-page-button:active, .wp-core-ui div.wpforms-container-full input[type=submit]:hover, .wp-core-ui div.wpforms-container-full input[type=submit]:active, .wp-core-ui div.wpforms-container-full button[type=submit]:hover, .wp-core-ui div.wpforms-container-full button[type=submit]:active, .wp-core-ui div.wpforms-container-full .wpforms-page-button:hover, .wp-core-ui div.wpforms-container-full .wpforms-page-button:active {
+    background: #0050a7;
+    border-radius: 5px;
+    padding: 10px 30px;
+    box-shadow: none !important;
+    border: 0px !important;
+    outline: none !important;
+}
+
+
+
+#contactform h2 {
+    padding: 0px !important;
+}
+
+#contactform .vce-google-fonts-heading--background.vce {
+    margin: 0;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+#contactform div.vce-google-fonts-heading-wrapper {
+    display: block;
+}
+
+#contactform .vce-col-content {
+    float: left;
+    width: 100%;
+}
+
+input[type="text"], input[type="number"], input[type="email"] {
+    width: 100% !important;
+    min-width: 100%;
+}
+
+.wpforms-field-row.wpforms-field-medium {
+    width: 100% !important;
+    min-width: 100%;
+}
+
+/* Course styles */
+
+.lp-content-area {
+    padding: 0 !important;
+}
+
+.lp-archive-courses .learn-press-courses-header {
+    background: #007aff;
+    color: #fff !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.lp-archive-courses .learn-press-courses-header * {
+    color: #fff;
+}
+
+ul.learn-press-breadcrumb {
+    display: none;
+}
+
+.lp-list-courses-default {
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 40px !important;
+}
+
+.learn-press-courses[data-layout=list] .course {
+    padding: 15px;
+    border-bottom: 0px;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px !important;
+}
+
+ul.learn-press-courses.lp-list-courses-no-css.grid {
+    margin-bottom: 30px !important;
+}
+
+.lp-courses-bar button {
+    color: #fff;
+}
+
+.lp-single-course__header__inner {
+    background: #007aff;
+}
+
+.lp-single-course__header__inner * {
+    color: #fff !important;
+}
+
+ul.lp-courses-related.learn-press-courses {
+    margin: 0px;
+}
+
+.lp-content-area {max-width: 1100px !important;/* float: left; */padding-left: 40px !important;margin: auto;}
+
+.lp-single-course__header__inner, div.lp-content-area {
+    max-width: 1100px !important;
+    margin: auto;
+}
+
+.lp-single-course__header {
+    background: #007aff !important;
+}
+
+/* Elementor Styles */
+.serviceCard .elementor-element[data-element_type="container"]:hover *, .serviceCard .elementor-element[data-element_type="container"]:hover svg{
+    color: #fff !important;
+    fill: #fff !important;
+}
+
+.serviceCard .elementor-element[data-element_type="container"]:hover a{
+    background:#fff;
+}
+.serviceCard .elementor-element[data-element_type="container"]:hover a *{
+    color:#1E88E5 !important;
+}
+
+/* Testimonials Section */
+
+.item-content-wrapper {
+    background: #fff !important;
+    box-shadow: 0 0 15px #f2222529;
+    border-radius: 10px;
+    border-top: 7px solid #F22225;
+}
+
+.profile-img-wrapper img {
+    width: 150px;
+    height: 150px;
+    border-radius: 0px !important;
+}
+
+.profile-img-wrapper {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    border-radius: 110px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 0px 2px #F22225;
+    margin: auto;
+}
+
+.tss-meta-info {
+    padding: 10px;
+}
+
+.testimonials-section {
+    padding: 50px 0;
+    max-width: 1100px;
+    margin: auto;
+    overflow: visible;
+}
+
+.tss-wrapper .tss-layout3 .item-content-wrapper:before, .tss-wrapper .tss-isotope1 .item-content-wrapper:before, .tss-wrapper .tss-video1 .item-content-wrapper:before, .tss-wrapper .tss-carousel3 .item-content-wrapper:before {
+    top: 6px;
+    left: 11px;
+    font-size: 16px;
+    color: #007aff;
+}
+
+.headingTitle{
+    font-family: "Inter", Sans-serif;
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 34px;
+    color: #282828;
+    text-align: center;
+}
